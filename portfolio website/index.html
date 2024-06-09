@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renee's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0edf8464c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi,I'm <span>Renee</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                    <h2><br>Hello! I'm Renee Pernati<br></h2>
+                    I'm a passionate web developer dedicated to creating beautiful, functional, and user-friendly
+                    websites. With a keen eye for design and a strong foundation in coding, I specialize in bringing
+                    innovative ideas to life on the web.
+                    <h3>My Journey <br></h3>
+                    My journey into web development began with a fascination for technology and a desire to understand
+                    how things work behind the scenes. Over the years, I've honed my skills through a combination of
+                    formal education, hands-on projects, and continuous learning. From building my first HTML page to
+                    developing complex web applications, every step has been an exciting adventure.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages:</span><br>HTML, CSS, JavaScript, PHP, Python</li>
+                            <li><span>Frameworks & Libraries:</span><br> React, Vue.js, Angular, Node.js, Expres</li>
+                            <li><span>Tools & Platforms:</span><br> Git, Docker, Webpack, AWS, Heroku</li>
+                            <li><span>Databases:</span><br> MongoDB, MySQL, PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Web Developer at ABC institute</li>
+                            <li><span>2020 - 2022</span><br>Freelance Web Developer at Star labs </li>
+                            <li><span>2018 - 2020</span><br>Web Development Intern at ekart ecommerce.</li>
+                            <li><span>2016 - 2018</span><br>Team Lead at corp LLC.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>Web development Training at ABC institute</li>
+                            <li><span>2015</span><br>M-tech in Stanford University</li>
+                            <li><span>2014</span><br>B-tech in Malla Reddy Engineering College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------services-------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-regular fa-database"></i>
+                        <h2>Web Development</h2>
+                        <p>I offer comprehensive web development services that bring your ideas to life on the web.
+                            Whether
+                            you need a simple informational site or a complex web application, I have the skills and
+                            experience to deliver a high-quality solution.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-computer"></i>
+                        <h2>Front-End Development</h2>
+                        <p>I specialize in creating visually appealing and user-friendly interfaces that enhance the
+                            user
+                            experience.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-robot"></i>
+                        <h2>E-Commerce Solutions</h2>
+                        <p>I provide end-to-end e-commerce solutions to help you build a successful online store. </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-----------------portfolio---------------->
+        <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.jpg" height="350">
+                        <div class="layer">
+                            <h3>ShopEase</h3>
+                            <p>ShopEase is a feature-rich e-commerce website designed for a seamless online shopping
+                                experience. It includes a user-friendly product catalog, secure payment gateways, and
+                                personalized user accounts.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.jpeg" height="350">
+                        <div class="layer">
+                            <h3>Capture Moments</h3>
+                            <p>Capture Moments is a portfolio website for a professional photographer. It showcases a
+                                gallery of high-resolution images, a blog section, and client testimonials.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" height="350">
+                        <div class="layer">
+                            <h3>BizManager Pro</h3>
+                            <p> BizManager Pro is a web application designed to streamline business operations for small
+                                to medium-sized enterprises. It includes features like project management, invoicing,
+                                and customer relationship management (CRM).</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!---------------Contact------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i>renee.pernati@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+91 8073785320</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/my cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-Right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"> </textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Renee. </p>
+            </div>
+        </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxQEsW4ACYe1zwlyrRMhP3Jkz-s5ll_RYwDXMLdMjkpSuXSycgMO3-toq4VeMSQkrIFbQ/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById("msg");
+        
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully";
+                        setTimeout(function() {
+                            msg.innerHTML = "";
+                        }, 3000);
+                        form.reset();
+                    })
+                    .catch(error => console.error('Error!', error.message));
+            });
+        </script>
+        
+</body>
+
+</html>
